@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:doc="http://xsltsl.org/xsl/documentation/1.0" xmlns:dt="http://xsltsl.org/date-time" xmlns:str="http://xsltsl.org/string" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-16">
+        <title>NOUSHAD PP</title>
+        <style type="text/css" id="static">
+            /* Reset browser defaults *//* --------------------------------------------------------------
+            Reset default browser CSS.
+            Based on work by Eric Meyer:
+            * http://meyerweb.com/eric/tools/css/reset/index.html
+            -------------------------------------------------------------- *//* v1.0 | 20080212 */html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+            body {line-height: 1; background: #FFF; text-align: left; font-feature-settings: "liga" 0; -moz-font-feature-settings: "liga" off;}
+            ol, ul {list-style: none;}
+            blockquote, q {quotes: none;}
+            blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+            /* remember to define focus styles! */:focus {outline: 0;}
+            /* remember to highlight inserts somehow! */ins {text-decoration: none;}
+            del {text-decoration: line-through;}
+            /* tables still need 'cellspacing="0"' in the markup */table {border-collapse: collapse; border-spacing: 0;}
+            a img {border: none;}
+            /* Typography */
+            ul, li {list-style-type: disc; margin: 0 0 0 10px; padding: 0;}
+            ul li {margin: 0 0 0 13px;}
+            .clear {clear: both; height: 0;}
+            br.clear {line-height: 0;}
+            div#document div.lowerborder {border-bottom: 3px solid; margin-top: 2px; display: block;}
+            div#document div.SECTION_CNTC {padding-bottom: 10px; margin-top: 0;}
+            div#document div.firstsection {margin-top: 0;}
+            div.name {font-size: 15px; line-height: 17px; font-weight: bold; padding: 0 0 1px 0; border-top: 1px solid; border-bottom: 1px solid; text-align: center; font-variant: small-caps;}
+            div.logo {display: none;}
+            div.paragraph {position: relative;}
+            div.heading {clear: both; text-align: center; font-weight: normal; font-variant: small-caps; position: relative;}
+            div.heading:before {border-top: 1px solid black; content: ""; display: block; height: 1px; position: absolute; top: 50%; width: 100%; z-index: 1;}
+            div#document .section {position: relative;}
+            div.sectiontitle {display: inline-block; position:relative; z-index:5; background:#FFF !important; padding:0 10px;}
+            div.address {position: relative; text-align: center; font-size: 0.917em; line-height: 1.25em; margin-top: 11px;}
+            div.address li, div.address ul {display: inline; margin: 0; padding: 0; list-style: none;}
+            #document .bullet{font-size:1em;vertical-align:top;margin:0 3px;}
+            div.adnlLnks li{margin:0;}
+            
+            div.address2 {position: relative; text-align: left; font-size: 0.917em; line-height: 1.25em;}
+            span.jobtitle, span.companyname, span.degree {font-weight: bold;}
+            span.paddedline {display: block;}
+            .nodisplay {display: none;}
+            .table_wrapper {width: 100%; margin-top: 0;}
+            table.twocol td {width: 50%;}
+            table.skills, table.twocol {width: 100%;}
+            table.skills th, table.skills td {width: 20%; text-align: center;}
+            table.skills th {text-decoration: underline;}
+            table.skills .skillname, table.skills .skillrating {text-align: left; width: 35%;}
+            table.skills .skillrating {width: 20%;}
+            table.skills .skillyears, table.skills .skilllast {width: 19%;}
+            table.skills .pad1 {width: 5%;}
+            table.skills .pad2, table.skills .pad3 {width: 1%;}
+            td.twocol_2 {border-left:1px  solid #FEFDFD;}
+            div.adnlLnks{text-align: center} /*Added by Amit for LCMAIN-955*/
+            /*FIX for FORCEFULLY making left margin ZERO for CL*/
+            div#document .sectionCL .paragraph {margin-top: 0!important;}
+        </style>
+        <style type="text/css" id="unparsed">
+            div#document {line-height: {$FTLH}px;}
+            div#document table {line-height: {$FTLH}px;}
+            div#document.pagesize {width: {$DOCW}px;}
+            div#document.vmargins {padding-top: {$TBMR}px; padding-bottom: {$TBMR}px;}
+            div#document.hmargins {padding-left: {$LRMR}px; padding-right: {$LRMR}px;}
+            div#document .section {margin-top: {$SCSP}px;}
+            div#document div.sectiontitle {font-size: {$HDSZ}px; line-height: {$HDLH}px;}
+            div#document div.heading {margin-bottom: {$SHMB}px;}
+            div#document div.paragraph {margin-top: {$PSPC}px;}
+            div#document div.firstparagraph {margin-top: 0;}
+            div#document .singlecolumn, div#document .maincolumn {margin-left: {$PIND}px; width: {$MACW}px;}
+            div#document table.skills td {padding-top: {$TDMT}px;}
+            .fontsize {font-size: {$FTSZ}px;}
+            .fontface {font-family: {$FTFC};}
+            div.name {font-size: {$NMSZ}px; line-height: {$NMLH}px;}
+            div.address {font-size: {$CISZ}px; line-height: {$CILH}px; margin-top: {$CIMT}px;}
+            div.address li:before {font-size: {$BTSZ}px;}
+
+            /*FIX for Re-calculating width of singlecolumn for CL*/
+            div#document .sectionCL .singlecolumn {margin-left: 0!important; width: 100%;}
+            div.address2 {font-size: {$FTSZ}px; line-height: {$FTLH}px;}
+            .adnlLnks li {display:inline!important;} /*Added by Amit for LCMAIN-955*/
+        </style>
+        <style type="text/css" id="dynamic">
+            div#document {line-height: 19px;}
+            div#document table {line-height: 19px;}
+            div#document.pagesize {width: 564px;}
+            div#document.vmargins {padding-top: 22px; padding-bottom: 22px;}
+            div#document.hmargins {padding-left: 24px; padding-right: 24px;}
+            div#document .section {margin-top: 4px;}
+            div#document div.sectiontitle {font-size: 16px; line-height: 23px;}
+            div#document div.heading {margin-bottom: 2px;}
+            div#document div.paragraph {margin-top: 4px;}
+            div#document div.firstparagraph {margin-top: 0;}
+            div#document .singlecolumn, div#document .maincolumn {margin-left: 0px; width: 564px;}
+            div#document table.skills td {padding-top: 2px;}
+            .fontsize {font-size: 12px;}
+            .fontface {font-family: "Times New Roman", Times, serif;}
+            div.name {font-size: 24px; line-height: 52px;}
+            div.address {font-size: 11px; line-height: 18px; margin-top: 9px;}
+            div.address li:before {font-size: 10px;}
+
+            /*FIX for Re-calculating width of singlecolumn for CL*/
+            div#document .sectionCL .singlecolumn {margin-left: 0!important; width: 100%;}
+            div.address2 {font-size: 12px; line-height: 19px;}
+            .adnlLnks li {display:inline!important;} /*Added by Amit for LCMAIN-955*/
+        </style>
+    </head>
+    <body>
+        <div id="document" class="fontsize fontface vmargins hmargins linespacing pagesize">
+            <div id="SECTION_NAMEb921af24-1203-4163-85db-72ff4112727d" class="section firstsection" style="padding-top:0px;">
+                <div id="PARAGRAPH_b921af24-1203-4163-85db-72ff4112727d_1_0b97c8d3-7566-472a-bddc-0fef12ce6e49" class="paragraph PARAGRAPH_NAME firstparagraph" style="padding-top:0px;">
+                    <div class="name">
+                        <span class="field" id="b921af24-1203-4163-85db-72ff4112727dFNAM1">NOUSHAD</span>
+                        <span></span> 
+                        <span class="field" id="b921af24-1203-4163-85db-72ff4112727dLNAM1">PP</span>
+                    </div>
+                    <div class="lowerborder"></div>
+                </div>
+            </div>
+
+            <div id="SECTION_CNTC381b296e-f49c-40f5-bfb4-190ae5769f74" class="section SECTION_CNTC" style="padding-top:0px;">
+                <div id="PARAGRAPH_381b296e-f49c-40f5-bfb4-190ae5769f74_1_6e5dc204-79f1-4676-aaee-cd2623cefb7a" class="paragraph PARAGRAPH_CNTC firstparagraph" style="padding-top:0px;">
+                    <div class="address">
+                        <ul>
+                            <li class="first"><span class="field" id="381b296e-f49c-40f5-bfb4-190ae5769f74STRT1">https://www.linkedin.com/in/ppnoushad/</span><span>, </span>
+                            <span class="spaced field" id="381b296e-f49c-40f5-bfb4-190ae5769f74CITY1">Wayanad</span><span>, </span>
+                            <span class="spaced field" id="381b296e-f49c-40f5-bfb4-190ae5769f74STAT1">Kerala</span>
+                            <span class="spaced field" dependency="STAT+ZIPC" id="381b296e-f49c-40f5-bfb4-190ae5769f74ZIPC1">673593</span>
+                            </li>
+                            <li><span class="xslt_static_change">H: </span><span class="field" id="381b296e-f49c-40f5-bfb4-190ae5769f74HPHN1">+919496345080</span></li>
+                            <li><span class="bullet">♦</span> <span class="xslt_static_change">C: </span><span class="field" id="381b296e-f49c-40f5-bfb4-190ae5769f74CPHN1">+918238074919</span></li>
+                            <li><span class="bullet">♦</span> <span class="field" id="381b296e-f49c-40f5-bfb4-190ae5769f74EMAI1">to.noushadpp@gmail.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="SECTION_SUMMddc263ac-19cb-4552-99e1-bd3817ba0e9a" class="section" style="padding-top:0px;">
+                <div class="heading">
+                    <div id="SECTNAME_SUMMddc263ac-19cb-4552-99e1-bd3817ba0e9a" class="sectiontitle">Professional Summary</div>
+                </div>
+                <div id="PARAGRAPH_ddc263ac-19cb-4552-99e1-bd3817ba0e9a_1_7de6d915-2de3-496e-b0a1-a3befca08d93" class="paragraph firstparagraph" style="padding-top:0px;">
+                    <div class="field singlecolumn" id="ddc263ac-19cb-4552-99e1-bd3817ba0e9aFRFM1"><p > Experienced full stack developer excellent at juggling multiple tasks and working under pressure. Broad industry experience with extensive exposure to startup environments. 3+ years of professional expertise with strong leadership and relationship-building skills. </p></div>
+                </div>
+            </div>
+
+            <div id="SECTION_HILT257e26e5-3a4d-4b42-8446-716ca617b5bf" class="section" style="padding-top:0px;">
+                <div class="heading">
+                    <div id="SECTNAME_HILT257e26e5-3a4d-4b42-8446-716ca617b5bf"     class="sectiontitle">Skills</div>
+                </div>
+                <div id="PARAGRAPH_257e26e5-3a4d-4b42-8446-716ca617b5bf_1_9e73952e-aa7e-410f-a684-bbe4a8c2ae92" class="paragraph firstparagraph" style="padding-top:0px;">
+                    <div class="singlecolumn maincolumn">
+                        <table class="twocol">
+                            <tr>
+                            <td class="field twocol_1" id="257e26e5-3a4d-4b42-8446-716ca617b5bfSKC11"><ul >   <li > <em > Languages </em>: JavaScript(ES6), PHP, ruby </li>  <li > <em > Backend: </em> NodeJs, RoR </li>  <li > <em > Cloud Services: </em> AWS, cloudinary, heroku </li>  <li > <em > Native: </em>  React native, Electron, WinjS </li>  <li > <em > Automation tools:  </em>NPM, Yarn, Bower, Grunt, Gulp, Webpack </li>  <li > Expert in Git </li> </ul></td>
+                            <td class="field twocol_2" id="257e26e5-3a4d-4b42-8446-716ca617b5bfSKC21"><ul >   <li > <em > Web: </em> HTML5, CSS3/4, ReactJs-Redux, angularjs, SASS/LESS </li>  <li > <em > Databases: </em> MongoDb, Redis, MySQL, PostgreSQL </li>  <li > <em > Others: </em> Firebase, Socket.io, UNIX shell </li>  <li > <em > Testing: </em> Jest, Enzyme, mocha, chai </li>  <li > <em > http servers:  </em>Nginx, Apache Servers </li> </ul></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="SECTION_EXPR6bc6d9c0-e661-481a-bb28-ff35838e088e" class="section" style="padding-top:0px;">
+                <div class="heading">
+                    <div id="SECTNAME_EXPR6bc6d9c0-e661-481a-bb28-ff35838e088e" class="sectiontitle">Work History</div>
+                </div>
+                <div id="PARAGRAPH_6bc6d9c0-e661-481a-bb28-ff35838e088e_1_7ef8e12e-bbe8-482b-bcfa-fff6a07cad6d" class="paragraph firstparagraph" style="padding-top:0px;">
+                    <div class="singlecolumn">
+                        <span class="paddedline" style="display: inline;">
+                            <span class="jobtitle" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJTIT1">Lead front end developer</span><span>, </span>
+                        </span>
+                        <span class="paddedline" style="display: inline;">
+                            <span class="jobdates" format="%m/%Y" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJSTD1">04/2017</span><span> to </span>
+                            <span class="jobdates" format="%m/%Y" id="6bc6d9c0-e661-481a-bb28-ff35838e088eEDDT1">Current</span><br>
+                        </span>
+                        <span class="paddedline">
+                            <span class="companyname" id="6bc6d9c0-e661-481a-bb28-ff35838e088eCOMP1">Pole Tech Labs Pvt Ltd ­</span><span> – </span>
+                            <span class="joblocation jobcity" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJCIT1">Ahmedabad</span><span>, </span>
+                            <span class="joblocation jobstate" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJSTA1">Gujarat</span><br>
+                        </span>
+                        <span class="jobline" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJDES1"><p > We pivoted our model focusing business centric applications with customer engagements and turned into a platform with which any businesses can go online in less than 10 minutes </p><ul >   <li > Lead and guided the frontend team of 4. </li>  <li > Responsible for reviewing, debugging and deployment of source code. </li>  <li > Implemented the dashboard for businesses to manage their store, customer interaction and beacons management with angular </li>  <li > architected and developed Pole Wall ,a digital signage module that helped clients to improve customer's in-store experience </li> </ul></span>
+                    </div>
+                </div>
+                <div id="PARAGRAPH_6bc6d9c0-e661-481a-bb28-ff35838e088e_2_02e7584c-c3c0-4f9a-a877-ff2c51ce0ff5" class="paragraph" style="padding-top:0px;">
+                    <div class="singlecolumn">
+                        <span class="paddedline" style="display: inline;">
+                            <span class="jobtitle" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJTIT2">Founding Engineer</span><span>, </span>
+                        </span>
+                        <span class="paddedline" style="display: inline;">
+                            <span class="jobdates" format="%m/%Y" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJSTD2">07/2016</span><span> to </span>
+                            <span class="jobdates" format="%m/%Y" id="6bc6d9c0-e661-481a-bb28-ff35838e088eEDDT2">03/2017</span><br>
+                        </span>
+                        <span class="paddedline">
+                            <span class="companyname" id="6bc6d9c0-e661-481a-bb28-ff35838e088eCOMP2">Pole Tech Labs Pvt Ltd ­</span><span> – </span>
+                            <span class="joblocation jobcity" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJCIT2">Ahmedabad</span><span>, </span>
+                            <span class="joblocation jobstate" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJSTA2">Gujarat</span><br>
+                        </span>
+                        <span class="jobline" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJDES2">
+                            <ul>
+                                <li>Joined as a fullstack developer in the core engineering team which designed and implemented a social network of location-based marketplaces and has users from more than 15 countries.</li>
+                                <li>Architected and implemented the admin dashboard using angularjs framework from scratch.</li>
+                                <li>Created the web version of the platform from scratch using self learning ReactJs-Redux library</li>
+                
+                                <li>Implemented backend feature required for the platform using NodeJs, MongoDb, Redis, Express and firebase.</li>
+                
+                                <li>Ensured data consistency of data across platform using cron jobs and saved a significant amount of Dev ops time with automation scripts for deployment processes.</li>
+                
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+                <div id="PARAGRAPH_6bc6d9c0-e661-481a-bb28-ff35838e088e_3_16acc52c-94b8-466d-b214-3b6a7577e0e6" class="paragraph" style="padding-top:0px;">
+                    <div class="singlecolumn">
+                        <span class="paddedline" style="display: inline;">
+                            <span class="jobtitle" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJTIT3">Software Engineer</span><span>, </span>
+                        </span>
+                        <span class="paddedline" style="display: inline;">
+                            <span class="jobdates" format="%m/%Y" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJSTD3">06/2015</span><span> to </span>
+                            <span class="jobdates" format="%m/%Y" id="6bc6d9c0-e661-481a-bb28-ff35838e088eEDDT3">07/2016</span><br>
+                        </span>
+                        <span class="paddedline">
+                            <span class="companyname" id="6bc6d9c0-e661-481a-bb28-ff35838e088eCOMP3">Bullfinch Software</span><span> – </span>
+                            <span class="joblocation jobcity" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJCIT3">Bengaluru</span><span>, </span>
+                            <span class="joblocation jobstate" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJSTA3">Karnataka</span><br>
+                        </span>
+                        <span class="jobline" id="6bc6d9c0-e661-481a-bb28-ff35838e088eJDES3">
+                            <ul >   
+                                <li > Had hands-on experience in RubyOnRails, angularjs, HTML5/CSS3/JavaScript, PHP, WinjS technologies. </li>  
+                                <li > Ported vanilla js projects to angular based projects. </li>  
+                                <li > Created and optimised responsive and performant web applications for e-commerce platforms, restaurant, insurance, survey, education sector clients Created and worked on windows mobile application using WinjS framework for enterprise-level clients Worked closely with clients to understand requirements and ensured smooth communication between client team and project team. </li> 
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="SECTION_CUST54356f9d-6f4b-42ab-8918-8414206721c8" class="section" style="padding-top:0px;">
+                <div class="heading">
+                    <div id="SECTNAME_CUST54356f9d-6f4b-42ab-8918-8414206721c8" class="sectiontitle">Works</div>
+                    </div>
+                    <div id="PARAGRAPH_54356f9d-6f4b-42ab-8918-8414206721c8_1_c02f6ce5-d488-45f0-976c-86a02c21b115" class="paragraph firstparagraph" style="padding-top:0px;">
+                    <div class="field singlecolumn" id="54356f9d-6f4b-42ab-8918-8414206721c8FRFM1">
+                        <ul>
+                            <li><u>https://poletalks.com/</u>&nbsp;</li>
+            
+                            <li>Pole Business - <u>https://dashboard.poletalks.com</u> (username - starbucks password - password)</li>
+            
+                            <li>Pole Business profile -<u> http://thepoleapp.com/app/starbucks</u></li>
+            
+                            <li>Pole Signage -<u> dashboard.poletalks.com/socialwall/59e061c840a738d67675406c/demoslideshow</u></li>
+            
+                            <li><u>http://alhattabholding.com</u></li>
+        
+                            <li><u>http://4pmbar.com</u></li>
+            
+                            <li><u>http://yogasala.poletalks.com</u></li>
+            
+                            <li><u>http://orbiz.poletalks.com</u></li>
+            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="SECTION_EDUCf0327d17-a2b4-41b5-ba57-c0954bb2872e" class="section" style="padding-top:0px;">
+                <div class="heading">
+                    <div id="SECTNAME_EDUCf0327d17-a2b4-41b5-ba57-c0954bb2872e" class="sectiontitle">Education</div>
+                </div>
+                <div id="PARAGRAPH_f0327d17-a2b4-41b5-ba57-c0954bb2872e_1_a982806d-6588-409c-a23e-71af3d80bc5f" class="paragraph firstparagraph" style="padding-top:0px;">
+                    <div class="singlecolumn">
+                        <span class="paddedline">
+                            <span class="degree" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eDGRE1">Bachelor of Technology</span><span>: </span>
+                            <span class="programline" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eSTUY1">Computer Science and Engineering</span><span>, </span>
+                            <span class="jobdates" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eGRYR1">2014</span><br>
+                        </span>
+                        <span class="paddedline">
+                            <span class="companyname companyname_educ" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eSCHO1">Government Engineering College</span><span> - </span>
+                            <span class="joblocation jobcity" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eSCIT1"></span>
+                            <span class="joblocation jobstate" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eSSTA1">KL</span><br>
+                        </span>
+                
+                        <span class="field" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eFRFM1">
+                            <ul>
+                                <li>Project work - Taxi reservation platform with emergency alert</li>
+                                <li>Mini project - Peer to peer android video streaming application</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>  
+
+                <div id="PARAGRAPH_f0327d17-a2b4-41b5-ba57-c0954bb2872e_2_b06a4263-cbc1-4f1c-90c5-5a225b27a1a0" class="paragraph" style="padding-top:0px;">
+                    <div class="singlecolumn">
+                        <span class="paddedline">
+                            <span class="degree" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eDGRE2">Higher Secondary Diploma</span><span>: </span>
+                            <span class="programline" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eSTUY2">General Science</span><span>, </span>
+                            <span class="jobdates" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eGRYR2">2010</span><br>
+                        </span>
+                        <span class="paddedline">
+                            <span class="companyname companyname_educ" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eSCHO2">Meenangadi Government Higher Secondary School</span><span> - </span>
+                            <span class="joblocation jobcity" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eSCIT2"></span>
+                            <span class="joblocation jobstate" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eSSTA2">KL</span><br>
+                        </span>
+                        
+                        <span class="field" id="f0327d17-a2b4-41b5-ba57-c0954bb2872eFRFM2">
+                            <ul>
+                                <li>Scored 92% in Board Exams</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="SECTION_ACCM4ec225de-9283-4569-881b-0ddbffa1de16" class="section" style="padding-top:0px;">
+                <div class="heading">
+                    <div id="SECTNAME_ACCM4ec225de-9283-4569-881b-0ddbffa1de16" class="sectiontitle">Accomplishments</div>
+                </div>
+                
+                <div id="PARAGRAPH_4ec225de-9283-4569-881b-0ddbffa1de16_1_96300046-f61f-483d-bc2b-f401766f3c11" class="paragraph firstparagraph" style="padding-top:0px;">
+                    <div class="field singlecolumn" id="4ec225de-9283-4569-881b-0ddbffa1de16FRFM1">
+                        <ul>   
+                            <li> Winner XBUILD18 - The official unmanned systems hackathon of AUVSI. (http://xbuild18.devpost.com) </li> 
+                            <li> Participated in Blackberry 1k developer program 2013 </li> 
+                            <li> College cricket team captain </li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
