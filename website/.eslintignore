@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+## root level
+public/
+.editorconfig
+.eslintrc.json
+.gitignore
+.nvmrc
+package.json
+README.md
+tsconfig.json
+yarn.lock
