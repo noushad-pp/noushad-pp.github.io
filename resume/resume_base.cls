@@ -102,8 +102,6 @@
 \newcommand{\worksubsectionjobtitle}[2]{%
   \noindent
   \makebox[\textwidth-2.5em][s]{%
-    \hspace{-2.5em}{#1}%
-    \dotfill%
-    #2%
+    \hspace{-2.5em}{#1}\dotfill#2%
   }%
 }
