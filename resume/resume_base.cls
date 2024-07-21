@@ -44,6 +44,11 @@
   \centerline{\Huge{\color{\themeColor}#1}}
 }
 
+% Title - contact sections
+\newcommand{\jobTitle}[1]{%
+  \centerline{\large{\color{\themeColor}#1}}
+}
+
 \newcommand\contact[5]{%
   \centerline{%
     \makebox[0pt][c]{%
@@ -82,8 +87,8 @@
 
 % Work sub-section items
 \newcommand{\worksubsection}[5]{%
+  \vspace{1pt}
   \begin{tabular*}{\textwidth}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
-    \vspace{-0.1pt}
     \textbf{\textsc{#1}} & \textit{#2} \\
     \textit{#3} & \textit{\small#4} \\
   \end{tabular*}\\
