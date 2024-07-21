@@ -13,6 +13,7 @@
 \RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{graphicx}
 \RequirePackage{fontawesome}
+\RequirePackage{calc}
 
 % Theme color variable
 \newcommand\themeColor{RoyalBlue}
@@ -86,16 +87,23 @@
 }
 
 % Work sub-section items
-\newcommand{\worksubsection}[5]{%
-  \vspace{1pt}
-  \begin{tabular*}{\textwidth}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
-    \textbf{\textsc{#1}} & \textit{#2} \\
-    \textit{#3} & \textit{\small#4} \\
-  \end{tabular*}\\
+\newcommand{\worksubsection}[3]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l@{\hspace{0.2em}}r}
+    \textbf{#1} & \textbf{#2} \\
+  \end{tabular*}
   \parbox{\textwidth}{
     \small
     \begin{itemize}
-      {#5}
+    {#3}
     \end{itemize}
   }
+}
+
+\newcommand{\worksubsectionjobtitle}[2]{%
+  \noindent
+  \makebox[\textwidth-2.5em][s]{%
+    \hspace{-2.5em}{#1}%
+    \dotfill%
+    #2%
+  }%
 }
